@@ -1,11 +1,10 @@
 version: 2
 jobs:
-  run_tests:
-    build:
-      docker:
-        - image: circleci/ruby:2.4.1
-      steps:
-        - run:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - run:
           name: "Trigger Build Circle-101"
           commmand: "curl -X POST https://circleci.com/api/v1.1/project/github/alyssalew/CircleCI-101/build?circle-token=$CIRCLE_TOKEN"
           
