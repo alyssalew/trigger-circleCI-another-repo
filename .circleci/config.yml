@@ -6,5 +6,5 @@ jobs:
     steps:
       - run:
           name: "Trigger Build Circle-101"
-          command: "curl -X POST https://circleci.com/api/v1.1/project/github/alyssalew/CircleCI-101/tree/$BRANCH?circle-token=$CIRCLE_TOKEN"
+          command: "curl -X POST https://circleci.com/api/v1.1/project/github/alyssalew/CircleCI-101/build?circle-token=$CIRCLE_TOKEN"
           
